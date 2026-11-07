@@ -1,3 +1,9 @@
+## Live Demo
+
+[Launch NEXUS ISP v2](https://4026a2569c17db3eb7.gradio.live)
+
+Note: The demo runs through a temporary Google Colab session. It is available only while the session remains active.
+
 # NEXUS ISP v2
 ### Neural EXposure-aware Unified Smartphone Image Signal Processor
 
