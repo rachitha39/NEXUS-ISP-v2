@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.log
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Colab / Jupyter
+.ipynb_checkpoints/
+.gradio/
+.config/
+
+# Datasets and archives
+data/
+data_v2/
+datasets/
+nexus_dataset_raw/
+*.zip
+*.npy
+
+# Training checkpoints
+models/
+*_last.pth
+*_best.pth
+
+# Temporary outputs
+outputs/
+temp/
+tmp/
+
+# Old application backup
+app_v1_backup.py
+
+# Old deployment model
+deployment/nexus_isp_inference.pth
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db

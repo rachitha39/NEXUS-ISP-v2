@@ -1,0 +1,13 @@
+{
+    "model_name": "NEXUS ISP v2",
+    "architecture": "NexusResidualUNet",
+    "base_channels": 16,
+    "input_channels": 3,
+    "output_channels": 3,
+    "patch_size": 128,
+    "parameters": 726643,
+    "precision": "FP16",
+    "checkpoint": "nexus_isp_v2_inference.pth",
+    "best_epoch": 18,
+    "best_validation_loss": 0.05224001482129097
+}

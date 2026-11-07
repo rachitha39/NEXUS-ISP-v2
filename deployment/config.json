@@ -1,0 +1,22 @@
+{
+  "project_name": "NEXUS ISP",
+  "version": "1.0",
+  "architecture": "NexusResidualUNet",
+  "base_channels": 16,
+  "input_format": [
+    "RGB",
+    "JPEG",
+    "PNG",
+    "Supported RAW/DNG"
+  ],
+  "output_format": "RGB PNG",
+  "processing_modes": [
+    "Classical ISP",
+    "Neural ISP",
+    "Adaptive Fusion"
+  ],
+  "recommended_precision": "FP32",
+  "optional_precision": "FP16 on compatible CUDA GPUs",
+  "high_resolution_processing": "Overlapping tiled inference",
+  "raw_processing_note": "RAW files are decoded to RGB with LibRaw before enhancement. The neural model is RGB-based, not a native Bayer RAW network."
+}
