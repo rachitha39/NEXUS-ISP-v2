@@ -1,0 +1,54 @@
+{
+    "project": "NEXUS ISP v2",
+    "model": "Residual U-Net",
+    "parameters": 726643,
+    "training_epochs": 20,
+    "best_epoch": 18,
+    "dataset": {
+        "total_images": 788,
+        "train": 551,
+        "validation": 118,
+        "test": 119
+    },
+    "synthetic_test_metrics": {
+        "Degraded Input": {
+            "PSNR": 15.0112,
+            "SSIM": 0.6514,
+            "MAE": 0.15753
+        },
+        "Classical ISP": {
+            "PSNR": 13.0742,
+            "SSIM": 0.6744,
+            "MAE": 0.18469
+        },
+        "Adaptive Fusion": {
+            "PSNR": 18.1842,
+            "SSIM": 0.8229,
+            "MAE": 0.1046
+        },
+        "NEXUS ISP v2": {
+            "PSNR": 26.3467,
+            "SSIM": 0.9082,
+            "MAE": 0.04093
+        }
+    },
+    "benchmark": {
+        "inference_latency_ms": 3.2668,
+        "throughput_images_per_second": 306.11,
+        "peak_gpu_memory_mb": 33.81,
+        "inference_checkpoint_mb": 2.79
+    },
+    "real_world_testing": {
+        "categories": [
+            "Outdoor daylight",
+            "Indoor lighting",
+            "Night photography"
+        ],
+        "modes": [
+            "Classical ISP",
+            "Neural ISP",
+            "Adaptive Fusion"
+        ],
+        "observation": "Neural ISP showed colour consistency issues on real photographs."
+    }
+}
